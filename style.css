@@ -1,33 +1,33 @@
 /* ===== DESIGN TOKENS ===== */
 :root {
-    --primary: #0e7a6e;
-    --primary-dark: #095e55;
-    --primary-light: #12a694;
-    --primary-glow: rgba(14, 122, 110, 0.25);
-    --accent: #e8443a;
-    --accent-dark: #c73029;
-    --accent-light: #ff6b61;
+    --primary: #1e3a5f;
+    --primary-dark: #142c4a;
+    --primary-light: #2c5f9e;
+    --primary-glow: rgba(30, 58, 95, 0.25);
+    --accent: #c4a07c;
+    --accent-dark: #a8865e;
+    --accent-light: #d4b896;
 
-    --bg-body: #f7f9fc;
+    --bg-body: #f5f7fb;
     --bg-white: #ffffff;
-    --bg-dark: #0b1a2a;
-    --bg-dark-lighter: #122438;
-    --bg-section-alt: #f0f5f4;
+    --bg-dark: #0d1b2a;
+    --bg-dark-lighter: #1b2d45;
+    --bg-section-alt: #edf1f8;
 
-    --text-heading: #0f2137;
+    --text-heading: #0d1b2a;
     --text-body: #4a5568;
     --text-light: #718096;
     --text-white: #ffffff;
     --text-on-dark: #cbd5e0;
 
-    --border: #e2e8f0;
+    --border: #dce3ed;
     --border-light: rgba(255, 255, 255, 0.08);
 
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
     --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.15);
-    --shadow-primary: 0 8px 30px rgba(14, 122, 110, 0.3);
+    --shadow-primary: 0 8px 30px rgba(30, 58, 95, 0.3);
 
     --radius-sm: 6px;
     --radius-md: 12px;
@@ -337,51 +337,28 @@ ol {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
     flex-shrink: 0;
 }
 
-.logo-icon {
-    width: 48px;
-    height: 48px;
-    background: linear-gradient(135deg, var(--primary), var(--primary-light));
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--shadow-primary);
+.logo-img {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
     transition: transform var(--transition);
 }
 
-.logo:hover .logo-icon {
-    transform: rotate(-8deg) scale(1.05);
+.logo:hover .logo-img {
+    transform: scale(1.03);
 }
 
-.logo-icon i {
-    font-size: 1.4rem;
-    color: white;
+.navbar.scrolled .logo-img {
+    height: 48px;
 }
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-name {
-    font-family: var(--font-heading);
-    font-size: 1.05rem;
-    font-weight: 800;
-    color: var(--text-heading);
-    letter-spacing: 1px;
-    line-height: 1.2;
-}
-
-.logo-tagline {
-    font-size: 0.62rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-    color: var(--primary);
-    text-transform: uppercase;
+/* Footer Logo */
+.footer-logo-img {
+    height: 70px;
+    filter: brightness(1.1);
 }
 
 /* Nav Links */
@@ -425,23 +402,30 @@ ol {
     width: 20px;
 }
 
-/* Appointment Button */
-.btn-appointment {
+/* WhatsApp Button */
+.btn-whatsapp {
     padding: 10px 24px;
     font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.5px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    background: linear-gradient(135deg, #25d366, #128c7e);
     color: var(--text-white);
     border-radius: var(--radius-full);
-    box-shadow: 0 4px 20px rgba(232, 68, 58, 0.3);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
     transition: all var(--transition);
     flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.btn-appointment:hover {
+.btn-whatsapp i {
+    font-size: 1.1rem;
+}
+
+.btn-whatsapp:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(232, 68, 58, 0.4);
+    box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45);
 }
 
 /* Mobile Toggle */
@@ -516,6 +500,7 @@ ol {
     from {
         transform: scale(1.05);
     }
+
     to {
         transform: scale(1.12);
     }
@@ -575,6 +560,7 @@ ol {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1282,7 +1268,7 @@ ol {
     color: var(--primary);
 }
 
-.blog-content > p {
+.blog-content>p {
     font-size: 0.9rem;
     color: var(--text-light);
     margin-bottom: 16px;
@@ -1374,6 +1360,7 @@ ol {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1956,8 +1943,9 @@ ol {
         background: var(--bg-section-alt);
     }
 
-    .btn-appointment {
-        display: none;
+    .btn-whatsapp {
+        padding: 8px 16px;
+        font-size: 0.78rem;
     }
 
     .mobile-toggle {
