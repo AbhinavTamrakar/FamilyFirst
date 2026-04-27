@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Health Clinic – Health is Wealth</title>
+    <meta name="description"
+        content="Hello Health Clinic - Your trusted partner in healthcare. We provide quality medical treatment, pharmacy services, laboratory services, and more. Care to Cure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== TOP INFO BAR ===== -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <a href="tel:061411777"><i class="fas fa-phone-alt"></i> 061411777</a>
+                <a href="mailto:hhclinicnepal@gmail.com"><i class="fas fa-envelope"></i> hhclinicnepal@gmail.com</a>
+                <span><i class="fas fa-map-marker-alt"></i> Budibazar, 26 Pokhara Lekhnath 33700</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Search"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo" id="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">HELLO HEALTH CLINIC</span>
+                    <span class="logo-tagline">CARE TO CURE</span>
+                </div>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#doctors">DOCTORS</a>
+                <a href="#pharmacy">PHARMACY</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#blog">BLOG</a>
+            </nav>
+            <a href="#contact" class="btn-appointment" id="btnAppointment">GET APPOINTMENT</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO SLIDER ===== -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" data-slide="0">
+                <div class="hero-bg"
+                    style="background-image: url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1600&q=80')">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <h1 class="hero-title">Your Health is Our Priority<br><span>Hello Health Clinic</span></h1>
+                    <p class="hero-subtitle">Welcome to your trusted partner in healthcare, the hospital that puts your
+                        health and wellbeing first.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Now</a>
+                        <a href="#about" class="btn btn-outline">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" data-slide="1">
+                <div class="hero-bg"
+                    style="background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1600&q=80')">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <h2 class="hero-title">Take the World's Best<br><span>Quality Treatment</span></h2>
+                    <p class="hero-subtitle">Our experienced team of medical professionals is here to provide you with
+                        the world's best healthcare.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Now</a>
+                        <a href="#about" class="btn btn-outline">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Previous slide"><i
+                class="fas fa-chevron-left"></i></button>
+        <button class="slider-arrow slider-next" id="sliderNext" aria-label="Next slide"><i
+                class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots" id="sliderDots">
+            <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+        </div>
+    </section>
+
+    <!-- ===== SERVICE CARDS BAR ===== -->
+    <section class="service-cards-bar">
+        <div class="container service-cards-grid">
+            <div class="service-card-item" id="cardEmergency">
+                <div class="service-card-icon"><i class="fas fa-ambulance"></i></div>
+                <h3>Emergency Cases</h3>
+                <p>We have a dedicated team of emergency medicine specialists ready to respond to your urgent healthcare
+                    needs.</p>
+                <a href="#services" class="btn btn-card">See Services</a>
+            </div>
+            <div class="service-card-item highlight" id="cardPrimary">
+                <div class="service-card-icon"><i class="fas fa-heartbeat"></i></div>
+                <h3>Primary Care</h3>
+                <p>We offer comprehensive primary care services for patients of all ages and backgrounds.</p>
+                <a href="#services" class="btn btn-card">See Services</a>
+            </div>
+            <div class="service-card-item" id="cardHours">
+                <div class="service-card-icon"><i class="fas fa-clock"></i></div>
+                <h3>Opening Hours</h3>
+                <div class="hours-list">
+                    <div class="hour-row"><span>Sunday – Saturday</span><span>6:30am – 7:30pm</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT / WHO WE ARE ===== -->
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="section-label">WHO WE ARE</span>
+                <h2 class="section-title">Making Our Community Safer</h2>
+                <p>Hello Health Clinic is a healthcare company established in 2019, with an initiative to provide
+                    quality healthcare at the community level through offline and online platforms. With motto
+                    <strong>CARE TO CURE</strong> and a mission to deliver quality healthcare to every doorstep, we have
+                    the vision to be Nepal's number one healthcare company.</p>
+                <div class="about-features">
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> Medical Treatment</div>
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> Qualified Doctors</div>
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> 7 Days a Week Service</div>
+                    <div class="about-feature"><i class="fas fa-check-circle"></i> Emergency Services</div>
+                </div>
+                <a href="#services" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=600&q=80"
+                    alt="Hello Health Clinic team">
+                <div class="about-image-accent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS COUNTER ===== -->
+    <section class="stats-section">
+        <div class="stats-overlay"></div>
+        <div class="container stats-grid">
+            <div class="stat-item" id="stat1">
+                <div class="stat-icon"><i class="fas fa-briefcase-medical"></i></div>
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-item" id="stat2">
+                <div class="stat-icon"><i class="fas fa-user-md"></i></div>
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Prominent Doctors</div>
+            </div>
+            <div class="stat-item" id="stat3">
+                <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                <div class="stat-number" data-target="5000">0</div>
+                <div class="stat-label">Happy Patients</div>
+            </div>
+            <div class="stat-item" id="stat4">
+                <div class="stat-icon"><i class="fas fa-microscope"></i></div>
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Modern Equipments</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MISSION / VISION / MOTTO ===== -->
+    <section class="mvm-section">
+        <div class="container mvm-grid">
+            <div class="mvm-card" id="mvmMission">
+                <div class="mvm-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Mission</h3>
+                <p>Our mission is to make our community safer, provide services based on the community level, and
+                    deliver quality healthcare to every doorstep.</p>
+            </div>
+            <div class="mvm-card" id="mvmVision">
+                <div class="mvm-icon"><i class="fas fa-eye"></i></div>
+                <h3>Vision</h3>
+                <p>Our goal is to become the number one healthcare company in Nepal and provide optimal health for the
+                    population we serve.</p>
+            </div>
+            <div class="mvm-card" id="mvmMotto">
+                <div class="mvm-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                <h3>Motto</h3>
+                <p>Our motto is to Care to Cure and make a lasting difference in the lives of those we serve.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DOCTORS ===== -->
+    <section class="doctors-section" id="doctors">
+        <div class="container">
+            <span class="section-label center">OUR DOCTORS</span>
+            <h2 class="section-title center">Meet Our Qualified Specialist Doctors</h2>
+            <p class="section-desc center">Our medical staff is highly trained and experienced in their respective
+                fields.</p>
+            <div class="doctors-grid">
+                <div class="doctor-card" id="doctor1">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80"
+                            alt="Dr. Santosh Baniya">
+                        <div class="doctor-overlay">
+                            <div class="doctor-socials">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h4>Dr. Santosh Baniya</h4>
+                        <p>M.D General Practice and Emergency Medicine</p>
+                    </div>
+                </div>
+                <div class="doctor-card" id="doctor2">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80"
+                            alt="Dr. Tirthalal Upadhya">
+                        <div class="doctor-overlay">
+                            <div class="doctor-socials">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h4>Dr. Tirthalal Upadhya</h4>
+                        <p>M.D Endocrinologist, Assoc. Professor</p>
+                    </div>
+                </div>
+                <div class="doctor-card" id="doctor3">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80"
+                            alt="Dr. Isha Shrestha Baral">
+                        <div class="doctor-overlay">
+                            <div class="doctor-socials">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h4>Dr. Isha Shrestha Baral</h4>
+                        <p>M.D Pathology</p>
+                    </div>
+                </div>
+                <div class="doctor-card" id="doctor4">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80"
+                            alt="Dr. Santosh Baral">
+                        <div class="doctor-overlay">
+                            <div class="doctor-socials">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h4>Dr. Santosh Baral</h4>
+                        <p>Radiologist</p>
+                    </div>
+                </div>
+                <div class="doctor-card" id="doctor5">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964c47d?w=400&q=80"
+                            alt="Dr. Mukunda Timilsina">
+                        <div class="doctor-overlay">
+                            <div class="doctor-socials">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h4>Dr. Mukunda Timilsina</h4>
+                        <p>M.D Pediatrics</p>
+                    </div>
+                </div>
+                <div class="doctor-card" id="doctor6">
+                    <div class="doctor-image">
+                        <img src="https://images.unsplash.com/photo-1643297654416-05795d62e39c?w=400&q=80"
+                            alt="Dr. Junu Shrestha">
+                        <div class="doctor-overlay">
+                            <div class="doctor-socials">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h4>Dr. Junu Shrestha Karmacharya</h4>
+                        <p>Assoc. Professor M.D Obstetrics & Gynaecology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <span class="section-label center">OUR SERVICES</span>
+            <h2 class="section-title center">We Are Dedicated to Providing Exceptional Healthcare</h2>
+            <p class="section-desc center">We are dedicated to providing exceptional healthcare services to our
+                patients.</p>
+            <div class="services-grid">
+                <div class="service-item" id="svcClinical">
+                    <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+                    <h3>Clinical Services</h3>
+                    <p>Doctors provide different care online and offline as well as provide counseling, assessment, and
+                        medical management or other services that require specialized knowledge.</p>
+                </div>
+                <div class="service-item" id="svcPharmacy">
+                    <div class="service-icon"><i class="fas fa-pills"></i></div>
+                    <h3>Pharmacy Services</h3>
+                    <p>Medicine delivery online/offline and providing excellent pharmaceutical care to patients ensuring
+                        that medicines are safe, clinically effective, and evidence-based.</p>
+                </div>
+                <div class="service-item" id="svcLab">
+                    <div class="service-icon"><i class="fas fa-flask"></i></div>
+                    <h3>Laboratory Services</h3>
+                    <p>Routine laboratory services along with home sampling services. Providing services related to lab
+                        tests including detailed information and specimen collection supplies.</p>
+                </div>
+                <div class="service-item" id="svcDental">
+                    <div class="service-icon"><i class="fas fa-tooth"></i></div>
+                    <h3>Dental Services</h3>
+                    <p>Provide dental care at walk-in clinics and online consultations. We provide clinically necessary
+                        treatment to keep your mouth, teeth, and gums healthy.</p>
+                </div>
+                <div class="service-item" id="svcDoctor">
+                    <div class="service-icon"><i class="fas fa-house-medical"></i></div>
+                    <h3>Hello Doctor Services</h3>
+                    <p>We are dedicated to providing full home care services based on patient needs. Doctors and nurses
+                        are available at home to provide comfort to patients.</p>
+                </div>
+                <div class="service-item" id="svcGeriatric">
+                    <div class="service-icon"><i class="fas fa-hand-holding-medical"></i></div>
+                    <h3>Geriatric Nursing</h3>
+                    <p>We provide nursing care to elderly patients at their home and serve the needs and requirements of
+                        senior citizens with long-term care and palliative care.</p>
+                </div>
+                <div class="service-item" id="svcSchool">
+                    <div class="service-icon"><i class="fas fa-school"></i></div>
+                    <h3>School Health Services</h3>
+                    <p>We set up health centers at schools, provide health education to students and parents, and help
+                        create safer environments for students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PHARMACY ===== -->
+    <section class="pharmacy-section" id="pharmacy">
+        <div class="container pharmacy-grid">
+            <div class="pharmacy-image">
+                <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80" alt="Pharmacy">
+            </div>
+            <div class="pharmacy-text">
+                <span class="section-label">HELLO PHARMACY</span>
+                <h2 class="section-title">Your Trusted Pharmacy Partner</h2>
+                <p>Medicine delivery online/offline and providing excellent pharmaceutical care to patients and ensuring
+                    that the medicines provided for each individual are safe, clinically effective, economic, rational,
+                    and wherever possible, evidence-based.</p>
+                <div class="pharmacy-features">
+                    <div class="pharmacy-feature"><i class="fas fa-truck-fast"></i> Home Delivery</div>
+                    <div class="pharmacy-feature"><i class="fas fa-shield-halved"></i> Verified Medicines</div>
+                    <div class="pharmacy-feature"><i class="fas fa-clock"></i> 7 Days Service</div>
+                    <div class="pharmacy-feature"><i class="fas fa-tags"></i> Best Prices</div>
+                </div>
+                <a href="#contact" class="btn btn-primary">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOG ===== -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <span class="section-label center">OUR BLOG</span>
+            <h2 class="section-title center">Latest Health Articles & Tips</h2>
+            <div class="blog-grid">
+                <div class="blog-card" id="blog1">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&q=80"
+                            alt="Regular Check-ups">
+                        <span class="blog-category">Health</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Admin</span>
+                            <span><i class="fas fa-calendar"></i> March 15, 2023</span>
+                        </div>
+                        <h3><a href="#">The Importance of Regular Check-ups</a></h3>
+                        <p>Regular health check-ups are vital for maintaining your overall well-being and catching
+                            potential issues early...</p>
+                        <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card" id="blog2">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1515894203077-5f649f5b10e3?w=500&q=80"
+                            alt="Good Sleep">
+                        <span class="blog-category">Mental Health</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Admin</span>
+                            <span><i class="fas fa-calendar"></i> Aug 11, 2020</span>
+                        </div>
+                        <h3><a href="#">The Importance of Sleep: Strategies for Getting a Good Night's Rest</a></h3>
+                        <p>Quality sleep is essential for physical and mental health. Discover expert strategies for
+                            better rest...</p>
+                        <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card" id="blog3">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&q=80"
+                            alt="Children Health">
+                        <span class="blog-category">Diseases</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-user"></i> Admin</span>
+                            <span><i class="fas fa-calendar"></i> Aug 11, 2020</span>
+                        </div>
+                        <h3><a href="#">Health Tips for Children: A Parent's Guide</a></h3>
+                        <p>As parents, keeping your children healthy is a top priority. Learn essential health tips for
+                            growing kids...</p>
+                        <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA / REGISTER ===== -->
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container cta-content">
+            <span class="cta-label">CARE TO CURE</span>
+            <h2>Meet with a Specialist — Register Now</h2>
+            <a href="#contact" class="btn btn-primary btn-lg">Register</a>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <span class="section-label center">TESTIMONIALS</span>
+            <h2 class="section-title center">What Our Patients Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active" id="testimonial1">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p>I can highly recommend Hello Health Clinic! The pharmacist has trained abroad and is very
+                        knowledgeable! The staff is very friendly and helpful. Their delivery is prompt and mostly on
+                        time. Also, the supply of medicine is plentiful and has met all of our needs.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <strong>Becky Richardson</strong>
+                            <span>Patient</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" id="testimonial2">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p>We have been using Hello Health Clinic since it first opened. We use them monthly for
+                        prescription delivery and have used them for numerous other services. They are always
+                        professional, always prompt, and always kind.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <strong>Paul and Amy Miller</strong>
+                            <span>Patient</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots" id="testimonialDots">
+                <button class="dot active" data-testimonial="0" aria-label="Testimonial 1"></button>
+                <button class="dot" data-testimonial="1" aria-label="Testimonial 2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <span class="section-label center">FREQUENTLY ASKED</span>
+            <h2 class="section-title center">Common Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item" id="faq1">
+                    <button class="faq-question">
+                        <span>Where is it located?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Buddibazar 26, just opposite to Prime Bank, Pokhara Lekhnath 33700.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq2">
+                    <button class="faq-question">
+                        <span>What is the phone number?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Phone: 061411777 | Mobile: 9856013577, 9856011528</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq3">
+                    <button class="faq-question">
+                        <span>What kinds of services can we get at HHC?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Clinical services, Pharmacy services, Laboratory services, Dental services, Hello Doctor
+                            services, School Health services, and Geriatric Nursing services.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq4">
+                    <button class="faq-question">
+                        <span>What are the opening hours?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sunday to Saturday: 6:30 AM to 7:30 PM</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq5">
+                    <button class="faq-question">
+                        <span>What if I can't make my appointment?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Please call the clinic as soon as you realize you will not be able to keep your appointment
+                            to reschedule.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq6">
+                    <button class="faq-question">
+                        <span>Do you have after hours care?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>If you are having a life-threatening condition call 911. If you call after hours, our
+                            answering service will connect you with the on-call provider.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <span class="section-label center">OUR GALLERY</span>
+            <h2 class="section-title center">A Glimpse of Our Clinic</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80" alt="Clinic 1">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400&q=80" alt="Clinic 2">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&q=80" alt="Clinic 3">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=400&q=80" alt="Clinic 4">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1583912267550-d6c2b23e6d1e?w=400&q=80" alt="Clinic 5">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&q=80" alt="Clinic 6">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <span class="section-label center">CONTACT US</span>
+            <h2 class="section-title center">Make an Appointment</h2>
+            <p class="section-desc center">Set up a meeting with a specialist to discuss your health concerns.</p>
+            <div class="contact-grid">
+                <div class="contact-hours">
+                    <h3>Opening Hours</h3>
+                    <div class="hours-table">
+                        <div class="hour-entry"><span>Monday</span><span>6:30 am – 7:30 pm</span></div>
+                        <div class="hour-entry"><span>Tuesday</span><span>6:30 am – 7:30 pm</span></div>
+                        <div class="hour-entry"><span>Wednesday</span><span>6:30 am – 7:30 pm</span></div>
+                        <div class="hour-entry"><span>Thursday</span><span>6:30 am – 7:30 pm</span></div>
+                        <div class="hour-entry"><span>Friday</span><span>6:30 am – 7:30 pm</span></div>
+                        <div class="hour-entry"><span>Saturday</span><span>6:30 am – 7:30 pm</span></div>
+                        <div class="hour-entry"><span>Sunday</span><span>6:30 am – 7:30 pm</span></div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Your Name (required)</label>
+                                <input type="text" id="contactName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Your Email (required)</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message</label>
+                            <textarea id="contactMessage" name="message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btnSubmit">SEND</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-info-cards">
+                <div class="contact-info-card" id="infoEmail">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:hhclinicnepal@gmail.com">hhclinicnepal@gmail.com</a>
+                </div>
+                <div class="contact-info-card" id="infoPhone">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Phone Number</h4>
+                    <a href="tel:061411777">061411777</a><br>
+                    <a href="tel:9856013577">9856013577</a>
+                </div>
+                <div class="contact-info-card" id="infoAddress">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Address</h4>
+                    <p>Budibazar, Pokhara-26<br>33700, Kaski (opposite Prime Bank)</p>
+                </div>
+            </div>
+            <div class="map-embed">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.9!2d83.985!3d28.209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDEyJzMyLjQiTiA4M8KwNTknMDYuMCJF!5e0!3m2!1sen!2snp!4v1"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    title="Hello Health Clinic Location"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-name">HELLO HEALTH CLINIC</span>
+                        <span class="logo-tagline">CARE TO CURE</span>
+                    </div>
+                </div>
+                <p>With an initiative to provide quality healthcare at the community level through offline and online
+                    platforms. With motto CARE TO CURE and a mission to deliver quality healthcare to every doorstep.
+                </p>
+            </div>
+            <div class="footer-posts">
+                <h4>Recent Posts</h4>
+                <div class="footer-post">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=80&q=60" alt="Blog post">
+                    <div>
+                        <a href="#">The Importance of Regular Check-ups</a>
+                        <span><i class="fas fa-calendar-alt"></i> Mar 15, 2023</span>
+                    </div>
+                </div>
+                <div class="footer-post">
+                    <img src="https://images.unsplash.com/photo-1515894203077-5f649f5b10e3?w=80&q=60" alt="Blog post">
+                    <div>
+                        <a href="#">The Importance of Sleep</a>
+                        <span><i class="fas fa-calendar-alt"></i> Aug 11, 2020</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-tags">
+                <h4>Tags</h4>
+                <div class="tags-cloud">
+                    <a href="#">Airborne Diseases</a>
+                    <a href="#">Asthma</a>
+                    <a href="#">Dental Care</a>
+                    <a href="#">Diabetes</a>
+                    <a href="#">Diseases</a>
+                    <a href="#">General Surgery</a>
+                    <a href="#">Health</a>
+                    <a href="#">Heart Diseases</a>
+                    <a href="#">Medical Myth</a>
+                    <a href="#">Medicine</a>
+                    <a href="#">Mental Health</a>
+                    <a href="#">Neurology</a>
+                    <a href="#">Orthopedic</a>
+                    <a href="#">Pharmacy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
