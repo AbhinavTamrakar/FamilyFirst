@@ -341,10 +341,19 @@ ol {
 }
 
 .logo-img {
-    height: 56px;
+    height: 83px;
     width: auto;
     object-fit: contain;
     transition: transform var(--transition);
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--text-heading);
+    margin-left: 10px;
+    font-family: var(--font-body);
+    transition: font-size var(--transition);
 }
 
 .logo:hover .logo-img {
@@ -352,7 +361,11 @@ ol {
 }
 
 .navbar.scrolled .logo-img {
-    height: 48px;
+    height: 64px;
+}
+
+.navbar.scrolled .logo-text {
+    font-size: 22px;
 }
 
 /* Footer Logo */
