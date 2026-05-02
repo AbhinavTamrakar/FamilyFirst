@@ -938,17 +938,17 @@ ol {
 
 .doctors-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    padding: 20px 60px;                     
-    max-width: 1100px;                      
+    padding: 20px 60px;
+    max-width: 1100px;
     margin: 0 auto;
     justify-content: center;
 }
 
 /* ===== FEATURED DOCTOR (standalone above grid) ===== */
 .featured-doctor-wrap {
-    max-width: 720px;
+    max-width: 100%;
     margin: 0 auto 48px auto;
 }
 
@@ -961,15 +961,16 @@ ol {
 
 .featured-doctor-image {
     width: 100%;
-    overflow: hidden;
-    background: var(--bg-section-alt);
+    aspect-ratio: 16 / 7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #d6e4f7;
+    line-height: 0;
 }
 
 .featured-doctor-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
+    display: none;
 }
 
 .featured-doctor-wrap .doctor-info {
@@ -983,7 +984,7 @@ ol {
 }
 
 .featured-doctor-wrap .doctor-info p {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .doctor-card.featured-doctor {
@@ -991,17 +992,17 @@ ol {
 }
 
 .doctor-card {
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: white;
 }
 
 .doctor-card img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  object-position: top;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .doctor-card:hover {
@@ -2035,8 +2036,9 @@ ol {
     }
 
     .doctors-grid {
-    grid-template-columns: repeat(2, 1fr);  /* 2 columns on tablet */
-    padding: 20px 30px;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablet */
+        padding: 20px 30px;
     }
 
     .blog-grid {
@@ -2057,10 +2059,10 @@ ol {
 }
 
 @media (max-width: 600px) {
-  .doctors-grid {
-    grid-template-columns: 1fr;             /* 1 column on mobile */
-    padding: 20px;
-  }
+    .doctors-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2090,17 +2092,24 @@ ol {
         grid-template-columns: 1fr;
     }
 
+    /* Featured doctor - full width on mobile */
+    .featured-doctor-wrap {
+        margin: 0 auto 32px auto;
+    }
+
+    /* Regular doctors grid - single column */
     .doctors-grid {
-        grid-template-columns: 1fr;     
-        padding: 20px;
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 16px;
     }
 
     .doctor-image {
-        height: 280px;
+        height: 260px;
     }
 
-    .doctor-card.featured-doctor .doctor-image {
-        height: 280px;
+    .doctor-card img {
+        height: 260px;
     }
 
     .blog-grid {
@@ -2140,9 +2149,10 @@ ol {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .doctors-grid {
-    grid-template-columns: repeat(2, 1fr);  /* 2 columns on tablet */
-  }
+    .doctors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablet */
+    }
 }
 
 @media (max-width: 480px) {
@@ -2176,6 +2186,19 @@ ol {
     .contact-form-wrap {
         padding: 24px;
     }
+
+    .featured-doctor-wrap .doctor-card {
+        border-radius: 12px;
+        border-width: 1px;
+    }
+
+    .featured-doctor-wrap .doctor-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .doctors-section {
+        padding: 60px 0;
+    }
 }
 
 /* ===== SMOOTH SCROLL REVEAL ANIMATION ===== */
@@ -2190,47 +2213,7 @@ ol {
     transform: translateY(0);
 }
 
-/* ===== SEARCH FORM ===== */
-.nav-search {
-    display: flex;
-    align-items: center;
-    background: #f0f4f8;
-    border-radius: var(--radius-full);
-    padding: 8px 16px;
-    margin: 0 auto 0 16px;
-    border: 1px solid transparent;
-    transition: all var(--transition);
-}
 
-.nav-search:focus-within {
-    border-color: var(--primary-light);
-    background: white;
-    box-shadow: 0 0 0 3px rgba(44, 95, 158, 0.1);
-}
-
-.nav-search input {
-    border: none;
-    background: transparent;
-    outline: none;
-    font-size: 0.85rem;
-    color: var(--text-body);
-    width: 140px;
-    transition: width var(--transition);
-}
-
-.nav-search input:focus {
-    width: 180px;
-}
-
-.nav-search button {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    padding-left: 8px;
-}
-
-.nav-search button:hover {
-    color: var(--primary);
-}
 
 /* ===== PAGE HEADER ===== */
 .page-header {
@@ -2272,20 +2255,7 @@ ol {
     margin: 0 auto;
 }
 
-/* Nav Search Responsive */
-@media (max-width: 1024px) {
-    .nav-search {
-        margin: 16px 20px;
-        width: auto;
-        justify-content: space-between;
-    }
-    .nav-search input {
-        width: 100%;
-    }
-    .nav-search input:focus {
-        width: 100%;
-    }
-}
+
 
 @media (max-width: 768px) {
     .btn-whatsapp {
