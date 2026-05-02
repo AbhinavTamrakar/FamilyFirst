@@ -44,7 +44,10 @@
                 <a href="about.html">ABOUT</a>
                 <a href="services.html">SERVICES</a>
                 <a href="doctors.html" class="active">DOCTORS</a>
-
+                <form class="nav-search" action="#" method="GET">
+                    <input type="text" placeholder="Search..." name="q" aria-label="Search site">
+                    <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+                </form>
             </nav>
             <a href="https://wa.me/9779713679888?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
                 class="btn-whatsapp" id="btnWhatsapp" target="_blank" rel="noopener noreferrer"><i
@@ -71,24 +74,21 @@
             <h2 class="section-title center">Meet Our Qualified Specialist Doctors</h2>
             <p class="section-desc center">Our medical staff is highly trained and experienced in their respective
                 fields.</p>
-            <div class="doctors-grid">
+            <!-- Featured Doctor (separate from grid) -->
+            <div class="featured-doctor-wrap">
                 <div class="doctor-card featured-doctor" id="doctor1">
-                    <div class="doctor-image">
-                        <img src="./images/maindoc.jpeg"
-                            alt="Dr. Arun Kumar Yadav">
-                        <div class="doctor-overlay">
-                            <div class="doctor-socials">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
+                    <div class="featured-doctor-image">
+                        <img src="./images/maindoc.jpeg" alt="Dr. Arun Kumar Yadav">
                     </div>
                     <div class="doctor-info">
                         <h4>Dr. Arun Kumar Yadav</h4>
-                        <p>Head of Medinice</p>
+                        <p>Head of Medicine</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Other Doctors Grid -->
+            <div class="doctors-grid">
                 <div class="doctor-card" id="doctor2">
                     <div class="doctor-image">
                         <img src="./images/doc1.jpeg"

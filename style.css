@@ -938,40 +938,70 @@ ol {
 
 .doctors-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);  
     gap: 24px;
-    padding: 20px 60px;
-    max-width: 1100px;
+    padding: 20px 60px;                     
+    max-width: 1100px;                      
     margin: 0 auto;
     justify-content: center;
 }
 
-.doctor-card.featured-doctor {
-    grid-column: 1 / -1;
+/* ===== FEATURED DOCTOR (standalone above grid) ===== */
+.featured-doctor-wrap {
+    max-width: 720px;
+    margin: 0 auto 48px auto;
+}
+
+.featured-doctor-wrap .doctor-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(30, 58, 95, 0.15);
+    border: 2px solid var(--primary-light);
+}
+
+.featured-doctor-image {
+    width: 100%;
+    overflow: hidden;
+    background: var(--bg-section-alt);
+}
+
+.featured-doctor-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.featured-doctor-wrap .doctor-info {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    padding: 20px 24px;
+}
+
+.featured-doctor-wrap .doctor-info h4 {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.featured-doctor-wrap .doctor-info p {
+    color: rgba(255,255,255,0.85);
 }
 
 .doctor-card.featured-doctor {
-    height: auto;
-    max-height: 420px;
-}
-
-.doctor-image {
-    height: auto;
-    max-height: 280px;
+    grid-column: unset;
 }
 
 .doctor-card {
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  background: white;
 }
 
 .doctor-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: top;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .doctor-card:hover {
@@ -981,15 +1011,15 @@ ol {
 
 .doctor-image {
     width: 100%;
-    height: auto;
+    height: 280px;
     overflow: hidden;
     position: relative;
 }
 
 .doctor-image img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     object-position: top;
     transition: transform 0.4s ease;
 }
@@ -2005,9 +2035,8 @@ ol {
     }
 
     .doctors-grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 columns on tablet */
-        padding: 20px 30px;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns on tablet */
+    padding: 20px 30px;
     }
 
     .blog-grid {
@@ -2028,11 +2057,10 @@ ol {
 }
 
 @media (max-width: 600px) {
-    .doctors-grid {
-        grid-template-columns: 1fr;
-        /* 1 column on mobile */
-        padding: 20px;
-    }
+  .doctors-grid {
+    grid-template-columns: 1fr;             /* 1 column on mobile */
+    padding: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2063,8 +2091,16 @@ ol {
     }
 
     .doctors-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;     
         padding: 20px;
+    }
+
+    .doctor-image {
+        height: 280px;
+    }
+
+    .doctor-card.featured-doctor .doctor-image {
+        height: 280px;
     }
 
     .blog-grid {
@@ -2104,10 +2140,9 @@ ol {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .doctors-grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 columns on tablet */
-    }
+  .doctors-grid {
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns on tablet */
+  }
 }
 
 @media (max-width: 480px) {
@@ -2244,11 +2279,9 @@ ol {
         width: auto;
         justify-content: space-between;
     }
-
     .nav-search input {
         width: 100%;
     }
-
     .nav-search input:focus {
         width: 100%;
     }
