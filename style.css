@@ -43,7 +43,7 @@
 
     --container: 1200px;
     --top-bar-height: 40px;
-    --nav-height: 80px;
+    --nav-height: 120px;
 }
 
 /* ===== RESET & BASE ===== */
@@ -341,7 +341,7 @@ ol {
 }
 
 .logo-img {
-    height: 83px;
+    height: 110px;
     width: auto;
     object-fit: contain;
     transition: transform var(--transition);
@@ -361,7 +361,7 @@ ol {
 }
 
 .navbar.scrolled .logo-img {
-    height: 64px;
+    height: 80px;
 }
 
 .navbar.scrolled .logo-text {
@@ -817,7 +817,7 @@ ol {
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     text-align: center;
 }
