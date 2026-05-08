@@ -341,7 +341,7 @@ ol {
 }
 
 .logo-img {
-    height: 110px;
+    height: 80px;
     width: auto;
     object-fit: contain;
     transition: transform var(--transition);
@@ -2073,6 +2073,13 @@ ol {
     .contact-grid {
         grid-template-columns: 1fr;
     }
+
+    .logo-img {
+        height: 80px;
+        width: auto;
+        object-fit: contain;
+        transition: transform var(--transition);
+    }
 }
 
 @media (max-width: 600px) {
@@ -2141,6 +2148,13 @@ ol {
 
     .contact-info-cards {
         grid-template-columns: 1fr;
+    }
+
+    .logo-img {
+        height: 60px;
+        width: auto;
+        object-fit: contain;
+        transition: transform var(--transition);
     }
 
     .form-row {
