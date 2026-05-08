@@ -2111,7 +2111,9 @@ ol {
 
     /* Featured doctor - full width on mobile */
     .featured-doctor-wrap {
-        margin: 0 auto 32px auto;
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 16px;
     }
 
     /* Regular doctors grid - single column */
