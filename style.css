@@ -549,7 +549,7 @@ ol {
 }
 
 .hero-title span {
-    color: var(--primary-light);
+    color: red;
     display: inline-block;
 }
 
